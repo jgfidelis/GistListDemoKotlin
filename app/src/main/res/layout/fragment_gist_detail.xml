@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/nameTextGist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toStartOf="@+id/button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:textSize="14pt" />
+    <TextView
+        android:id="@+id/nameTextMult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toStartOf="@+id/button"
+        android:text="TextView"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:textSize="14pt" />
+
+    <TextView
+        android:id="@+id/authorText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_toStartOf="@+id/button"
+        android:text="TextView"
+        android:gravity="center_vertical"
+        android:textSize="12pt"
+        android:textColor="@color/colorPrimaryDark"
+        android:singleLine="true"
+        android:textAppearance="@android:style/TextAppearance.Material.Subhead" />
+
+    <com.jgfidelis.gistdemoapplication.FavoriteButtonView
+        android:id="@+id/button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewGist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fileCount"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/fileCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/authorText"
+        android:gravity="center_vertical"
+        android:textSize="10pt"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="2 Files" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/authorText"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toStartOf="@+id/button"
+        android:layout_below="@+id/nameText"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorPrimaryDark"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:textSize="8pt"
+        android:text="TextView" />
+</RelativeLayout>

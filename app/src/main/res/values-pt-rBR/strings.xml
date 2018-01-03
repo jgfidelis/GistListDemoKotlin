@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GistListDemoKotlin</string>
+    <string name="tab_text_1">Início</string>
+    <string name="tab_text_2">Favoritos</string>
+    <string name="tab_text_3">Sobre</string>
+    <string name="action_settings">Configurações</string>
+    <string name="about_frag_title">Sobre</string>
+    <string name="by">Por: %s</string>
+    <string name="connection_error">Houve um erro de conexão ao baixarmos os dados. Quer tentar novamente?</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="not_specified">Não especificado</string>
+    <string name="unknown">Anônimo</string>
+    <string name="about_text">Aplicativo feito por João Guilherme Daros Fidelis como demo.\nFeito em dezembro de 2017.</string>
+    <string name="favs_msg">Você não tem nenhum favorito adicionado!\nAperte nas estrelas para adicionar Gists para a sua lista de favoritos.</string>
+    <string name="file">1 Arquivo</string>
+    <string name="file_pl">%d Arquivos</string>
+</resources>

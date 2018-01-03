@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:animateLayoutChanges="true">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateOnly="true"
+        android:keepScreenOn="true" />
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_width="fill_parent">-->
+
+        <TextView
+            android:id="@+id/mytext"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="" />
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/border"
+    android:layout_height="120dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="1pt"
+        android:layout_marginLeft="1pt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="TextView"
+        android:layout_marginRight="1pt"
+        android:layout_marginLeft="1pt"
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@android:style/TextAppearance.Material.Title" />
+
+    <TextView
+        android:id="@+id/authorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="1pt"
+        android:text="TextView"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@android:style/TextAppearance.Material.Subhead" />
+
+    <TextView
+        android:id="@+id/gistDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/nameText"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:layout_marginLeft="1pt"
+        android:layout_marginRight="1pt"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/mybtn"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateOnly="true"
+        android:keepScreenOn="true" />
+
+</RelativeLayout>
